@@ -1,0 +1,40 @@
+{
+"ourservices" : [
+ {
+    "name": "Shifting",
+    "adjustDerailleur": $45,
+    "replaceCable": $69.99,
+    ]
+  },
+
+{
+    "name": "Breaks",
+    "adjustRim": $12,
+    "adjustDisc": $8,
+  ]
+  },
+
+  {
+  
+    "name": "Miscellaneous",
+    "wrapRoad": $14.99,
+    "assembleBoxed": $14.99,
+    "removeCleanReinstall": $9.99,
+    "shopRate": $14.99,
+    
+     ]
+  },
+
+  {   
+    "name": "Wheels",
+    "installTube": $14.99,
+    "installTubeles": $9.99,
+    "adjustFront": $12.99,
+    "adjustRear": $1.99, 
+    "overhaulFronts": $4.99,
+    "overhaulRear": $1.99,
+    "trueWheel": $12.99, 
+    ]
+  }
+ ]
+}

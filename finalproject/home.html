@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Welcome | Home | The Mountain Spoke</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="The Mountain Spoke is one of the best option for  you and your bicycle">
+  <!-- fonts -->    
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+  <header >
+    <a href="home.html">
+      <figure class= "logo">
+         <img src="images/logo-large.png" alt= "The Mountain Spoke Logo">
+      </figure>
+      <h1> The Mountain Spoke></h1>
+    </a>  
+  </header>
+    <picture id="largeimag">
+      <img src="images/bike-large.jpg" alt="bike" sizes ="100vw"
+           srcset= "images/bike-large.jpg 600w,
+                    images/bike-large.jpg 800w,
+                    images/bike-large.jpg 1000w">
+      </picture>
+  <nav class= "navbar">
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+      <ul id="mainmenu" class="navigation">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="adventure-tour.html">Adventure Tour</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="shop.html">Shop</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html" >Contact</a></li>
+      </ul>
+  </nav>
+  <main> 
+      <section class="page-title"><h1>WELCOME</h1></section>
+    <section class= "shop-services">
+        <a href="shop.html">
+        <div class="shop">Shop</div>
+        <img src="images/b-one-large.jpg" alt="Bicycle on a road" sizes ="100vw"
+           srcset= "images/b-one-small.jpg 600w,
+                    images/b-one-med.jpg 800w,
+                    images/b-one-large.jpg 1000w">        
+      <button type="button" class="btn-one">Shop</button>
+    
+      </a>
+    </section> 
+      
+    <section class= "services">
+        <a href="services.html">
+        <div class="services">Services</div>
+        <img src="images/b-three-large.jpg" alt="Bicycle on a road" sizes ="100vw"
+           srcset= "images/b-three-small.jpg 600w,
+                    images/b-three-med.jpg 800w,
+                    images/b-three-large.jpg 1000w">
+        <button type="button" class="btn-two">Services</button>
+      </a>
+    </section>      
+    <section class= "adventure">
+        <a href="adventure-tour.html">
+        <div class="adventure"> Adventure Tours </div>
+        <img src="images/b-two-large.jpg" alt="bicycles at sunset" sizes ="100vw"
+           srcset= "images/b-two-small.jpg 600w,
+                    images/b-two-med.jpg 800w,
+                    images/b-two-large.jpg 1000w">
+      <button type="button" class="btn-three"> Adventure Tours </button>
+      </a>
+    </section> 
+    <section class= "events" href="events.html">
+        <a href="events.html">
+        <div class="events"> Events </div>
+        <img src="images/b-four-large.jpg" alt="Bicycle on a road" sizes ="100vw"
+           srcset= "images/b-four-small.jpg 600w,
+                    images/b-four-med.jpg 800w,
+                    images/b-four-large.jpg 1000w">
+      <button type="button" class="btn-four"> Events </button>
+      </a>
+    </section> 
+    <section class= "contact">
+        <a href="contact.html">
+        <div class="contact"> Contact </div>
+        <img src="images/b-five-large.jpg" alt="Bike wheel" sizes ="100vw"
+           srcset= "images/b-five-small.jpg 600w,
+                    images/b-five-med.jpg 800w,
+                    images/b-five-large.jpg 1000w">
+      <button type="button" class="btn-five"> Contact </button>
+      </a>
+    </section>
+  </main>
+  <footer>
+    <aside>
+        3950 Valley Commons Drive <br> Bozeman, MT 59718<br>999.999.9999<br>  contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |<a class= "resource" href="resource.html"> Resource | </a><span id="currentdate"> Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="js/button.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/wayfinding.js"></script>
+  <script src="js/currentdate.js"></script>   
+</body>
+</html>

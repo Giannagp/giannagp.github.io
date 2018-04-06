@@ -1,0 +1,569 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 1000%;
+    margin: 0;
+    background-color: white;
+}
+picture img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+header {
+    background-color: #4d0017;
+    width: 100%; 
+    border-top: solid 3px #000;
+    border-bottom: solid 3px #000;
+    padding: 0;
+    
+}
+
+header a {
+    text-decoration: none;
+}
+header h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight:200;
+    margin: 1% 0% 3% 9%;
+    display: inline-flex;
+}
+header figure.logo {
+    float: left;
+    margin: .5rem 2% 1% 30%;
+    padding: 0 ; 
+}
+header figure img {
+   width: 70%;
+}
+
+.navigation { 
+    list-style: none; 
+    padding-left: 0; 
+    
+
+}
+.navigation li { 
+    display: none; 
+}
+.navigation.responsive {
+    margin-left: 12%;
+    background: #ffffff;
+}
+.navigation.responsive li {
+    background-color: #062f4f;
+    display: flex;
+    flex-grow: 3;
+    justify-content: center;
+    width: 80%; 	
+    border: 1px solid #cccccc;   
+}
+.navigation.responsive li a { 
+    justify-content: center;	 
+    text-decoration:none;
+    padding: 8%;
+    width: 100%;  
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}   
+.navigation.responsive li a:hover { 
+    background-color: #471f3f ;
+    color: #ffffff ;
+}
+nav button {
+    background-color: #062f4f;
+    border: none; 
+}
+.hamburger{
+    color: #d9d9d9;
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;  /*remove list*/
+    margin: 0 1px;
+}
+nav ul li a {
+    text-decoration: none;  /*saca la liena de abajo*/
+    color:#d9d9d9; /* makes the words white*/
+}
+nav ul li.active a { /*afecta ambas pantallas*/
+    background-color: #6b2e5f; /*current page white*/
+    
+}   
+nav ul li a:hover {  /*afecta la pantalla media*/
+    background-color: #6b2e5f ; /*cuando se apoya el mouse */
+    color: #ffffff ; /*color letra*/
+}
+
+main {
+    margin: 2%;
+}
+
+section.page-title{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 3%;
+    margin-left: 2%;
+}
+section.shop-services {
+    margin-top: 10%;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;   
+}
+section.shop-services:hover {
+    box-shadow: 10px 10px 15px #666666;
+}
+section.shop-services img {
+    width: 100%; 
+    padding: 3%;
+}
+div.shop {    
+    background-color: #062f4f;
+    color: #d9d9d9;
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+button.btn-one {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+section.services {
+    margin-top: 10%;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+    
+}
+section.services:hover {
+    box-shadow: 10px 10px 15px #666666;
+}
+section.services img {
+    width: 100%; 
+    padding: 3%;
+}
+div.services {    
+    background-color: #062f4f;
+    color: #d9d9d9;
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+button.btn-two {
+    display: none;
+}
+section.adventure{
+    margin-top: 10%;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+}
+section.adventure:hover {
+    box-shadow: 10px 10px 15px #666666;
+}
+section.adventure img {
+    width: 100%; 
+    padding: 3%;
+}
+div.adventure{
+    background-color: #062f4f;
+    color: #d9d9d9;
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+button.btn-three{
+    display: none;
+}
+
+section.events{
+    margin-top: 10%;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+}
+section.events:hover {
+    box-shadow: 10px 10px 15px #666666;
+}
+section.events img {
+    width: 100%; 
+    padding: 3%;
+}
+div.events{
+    background-color: #062f4f;
+    color: #d9d9d9;
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+button.btn-four{
+    display: none;
+}
+
+section.contact{
+    margin-top: 10%;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+    margin-bottom: 10%;
+}
+section.contact:hover {
+    box-shadow: 10px 10px 15px #666666;
+}
+section.contact img {
+    width: 100%; 
+    padding: 3%;
+}
+div.contact{
+    background-color: #062f4f;
+    color: #d9d9d9;
+    border: none;
+    padding: 1% 3%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+button.btn-five{
+    display: none;
+}
+
+footer {
+    background-color: #4d0017;
+    width: 100%;    
+    width: 100%;    
+}
+
+footer aside {
+    color: #ffffff;
+    width: 100%;
+    font-size: 16px;
+    padding: 3% 0 2% 0 ;
+    text-align: center;
+    background-color: #4d0017;
+    border-top: solid 3px #000;
+    
+}
+footer>p {
+    padding:.3rem;
+    margin-bottom: 0;
+    text-align: center;
+    clear: both;
+    color: #999999;
+    font-size: 15px;
+    background-color: #33000f;
+    border-top: solid 1px #000;
+} 
+
+a.resource{
+    text-decoration: none;
+    color:#999999;
+}
+
+
+
+
+
+/*------------- Shop ------------------- */
+
+#slider{
+    width: 600px;
+    height: 700px;
+    margin-top: 3%;
+}
+
+#slider .slides{
+    display: flex;
+    width: 6000px;
+    height: 400px;
+    margin: 1%;
+    padding: 0;
+}
+
+#slider .shop-bike{
+    list-style-type: inherit;
+    width: 820px;
+    height: 400px;
+    list-style: none;
+  
+}
+
+
+.shop-bike-title {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+
+p.text {
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding-left: 4%;
+    line-height: 25px;
+
+ 
+}
+
+
+/*------------- Contact------------------- */
+section.map{
+    text-align: center;
+    border: solid 1.5px #000;
+    border-radius: .8em;
+    margin: 2em 5%;
+    margin-bottom: 1%;
+    background-color: #f2f2f2;
+    margin-top: 0;
+
+}
+iframe{
+    width: 90%;
+    height: 200px;
+    margin: 2%;
+}
+
+section.form-info{
+    text-align: center;
+    border: solid 1.5px #4d0017;
+    border-radius: .8em;
+    margin: 5% 5% 5% 5%;
+    background-color: #f2f2f2;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 3%;       
+    
+}
+
+.info-info {
+    font-size: 20px;
+    
+}
+
+form#contact {
+    margin: 2em 5%;
+}
+
+fieldset {
+    border-radius: .8em;
+    margin: 2.5em 0;
+    border: #4d0017 1.5px solid; 
+    background-color: #f2f2f2;
+    
+}
+
+legend {
+    color: #d9d9d9;
+    margin-left: 6%;
+    padding: .6em;
+    border: #000000 solid 2px;
+    background-color: #062f4f;
+    border-radius: .4em;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 19px;
+}
+
+
+label span{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px; 
+    padding-top: 1.5em;
+    padding-bottom: .4em;  
+    font-weight: 500;
+}
+
+
+input {
+    display: block;
+    padding: .3em;
+    margin: .3em;
+    font-family: 'Noto Sans', sans-serif;
+    color:#4d4d4d;
+    width: 70%;
+}
+
+
+textarea {
+    padding-top: .4em;
+    border-radius: .4em;
+    font-family: 'Noto Sans', sans-serif;
+    color: #4d4d4d;
+    width: 90%;
+}
+
+input.submitbtn{
+    color: #d9d9d9;
+    max-width: 85%;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 1.65rem;
+    padding: .5rem;
+    margin: 1.5rem 2rem;
+    background: #471f3f;
+    box-shadow: 6px 6px 10px #666666;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+}
+
+/*-----------Registration---------------------*/
+
+form#registration {
+    margin: 2em 5%;
+}
+.state, .country {
+    padding: .3rem;
+    max-width: 70%;
+}
+
+
+/*-----------Thank You ---------------------*/
+
+.thanks {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+/*----------- Adventure ---------------------- */
+.adventure-one, .adventure-two, .adventure-three, .adventure-four {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    border: solid #000 1.5px;
+    background-color: #062f4f;
+    color: #d9d9d9;
+    margin: 2%;
+    border-radius: .4em;
+    
+}
+
+p.adventure-info {
+    border-radius: .4em;
+    margin: 2% 2%;   
+    padding: 4%;
+}
+p.adventure-cont{
+    border: #4d0017 1px solid; 
+    border-radius: .4em;
+    background: #471f3f;
+    margin: 2% 10%; 
+    padding: 4%;
+}
+
+
+
+/*----------- Events ---------------------- */
+a.submitbtn{
+    text-decoration: none; 
+}
+
+.background img {
+    width: 100%;
+}
+
+.event-cycle{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 3%;
+}
+
+.intro{
+    font-style: italic;
+    border-bottom: #4d0017 1.5px solid;
+    margin: 4%;
+}
+
+p.title {
+    font-weight: bold;
+}
+
+.info-cycle{
+    border-bottom: #4d0017 1.5px solid;
+    border-top: #4d0017 1.5px solid;
+    padding: 3%
+
+}
+.registration {
+  border: #4d0017 1px solid; 
+  border-radius: .4em;
+  background-color: #062f4f;
+  color: #d9d9d9;
+  margin: 2% 10%; 
+  padding: 4%;  
+  text-align: center;
+}
+
+.map-event{
+  display: none;
+  border: #4d0017 1px solid; 
+  border-radius: .4em;
+  background-color: #062f4f; 
+  color: #d9d9d9;
+  margin: 2% 10%; 
+  padding: 4%;  
+  text-align: center;
+}
+
+.map-event img{
+    width: 100%;
+    height: 30%;
+}
+
+/*----------- Service ---------------------- */
+table {
+ width: 50%;
+ border:#4d0017 1.5px solid; 
+ border-collapse: collapse;
+ margin-left: 15%;
+ font-family: 'Amaranth', sans-serif;
+ line-height: 25px;
+ 
+}
+td.title {
+    background-color: #062f4f;
+    color: #d9d9d9;
+    text-align: center;
+}
+
+tr {
+    border: #000 2px solid; 
+}
+
+tr:nth-child(even){
+background-color: #f7edf5;
+color: #000;
+}
+
+tr:nth-child(odd){
+   background-color: #e7f4fd;
+   color: #000;
+}
+
+
+
+

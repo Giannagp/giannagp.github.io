@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Adventure Tour | Guided Tours | The Mountain Spoke</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="The Mountain Spoke is one of the best option for  you and your bicycle">
+  <!-- fonts -->    
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header >
+    <a href="home.html">
+      <figure class= "logo">
+         <img src="images/logo-large.png" alt= "The Mountain Spoke Logo">
+      </figure>
+      <h1> The Mountain Spoke</h1>
+    </a>  
+  </header>
+    <picture id="largeimag">
+      <img src="images/bike-large.jpg" alt="bike" sizes ="100vw"
+           srcset= "images/bike-large.jpg 600w,
+                    images/bike-large.jpg 800w,
+                    images/bike-large.jpg 1000w">
+      </picture>
+  <nav class= "navbar">
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+      <ul id="mainmenu" class="navigation">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="adventure-tour.html">Adventure Tour</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="shop.html">Shop</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html" >Contact</a></li>
+      </ul>
+  </nav>
+  <main> 
+      
+    
+      <section class="page-title"><h1>Adventure Tour</h1>
+      <h2>"Guided Tours"</h2></section>
+      
+      <div class="all-adventure">
+      <section class="adventure-one">
+      <p class="event-info">The Cross-Washington Mountain Bike Route (XWA) is a 685 mile, mostly off-road bikepacking route from the Pacific Ocean to the Washington/Idaho border. The route features a mixture of singletrack, dirt roads, and a bit of pavement as it crosses the Evergreen State passing through an incredibly diverse array of landscapes and terrain.</p>
+      <p class="adventure-cont">
+       &rarrlp; Date: April 26, 2018<br>
+       &rarrlp; Cost: $2,500<br>
+       &rarrlp; Distance: 684 Mi.<br>
+       &rarrlp; Difficulty (1-10): 7 <br>
+       &rarrlp; Days: 10 days<br>
+       &rarrlp; Total Ascent: 48,077'<br>
+       &rarrlp; High Point: 6,600'<br>
+      </p>
+      </section>
+    
+      <section class="adventure-two">
+      <p class="adventure-info">For those seeking desert solitude tinged with a touch of the bizarre this winter, we present the SoCal Desert Ramble. Prepare to immerse yourself amongst desert blooms and starry nights, slither your way along sandy washes, linger in counter-culture hangouts, ponder salty, decayed holiday resorts gone wrong, and marvel at the Dr Seussian splendour of the gangly, anthropomorphic Joshua Tree….</p>
+      <p class="adventure-cont">
+       &rarrlp; Date: June 10, 2018<br>
+       &rarrlp; Cost: $1,900<br>
+       &rarrlp; Distance: 497 Mi.<br>
+       &rarrlp; Difficulty (1-10): 7 <br>
+       &rarrlp; Days: 10 days<br>
+       &rarrlp; Total Ascent: 30,100'<br>
+       &rarrlp; High Point: 7,600'<br>
+      </p>
+      </section>
+            
+      <section class="adventure-three">
+      <p class="adventure-info">The Oregon Timber Trail is an iconic 670-mile backcountry mountain bike route spanning Oregon’s diverse landscapes from California to the Columbia River Gorge. Divided into four unique tiers that can be through or section ridden, it travels through a variety of landscapes, communities, ecosystems, terrain and, most importantly, mountain bike trails, with over 50 per cent singletrack to its name.</p>
+      <p class="adventure-cont">
+       &rarrlp; Date: August 22, 2018<br>
+       &rarrlp; Cost: $4,900<br>
+       &rarrlp; Distance: 668 Mi.<br>
+       &rarrlp; Difficulty (1-10): 8 <br>
+       &rarrlp; Days: 25 days<br>
+       &rarrlp; Total Ascent: 66,015'<br>
+       &rarrlp; High Point: 8,317'<br>
+      </p>
+      </section>
+      
+      <section class="adventure-four">
+      <p class="adventure-info">The Baja Divide connects the Pacific Ocean and the Sea of Cortez, historic Spanish mission sites rich with shade and water, remote ranchos and fishing villages, bustling highway towns, and every major mountain range in Baja California on miles and miles of beautiful backcountry desert tracks.</p>
+      <p class="adventure-cont">
+       &rarrlp; Date: October 22, 2018<br>
+       &rarrlp; Cost: $7,700<br>
+       &rarrlp; Distance: 1,673 Mi.<br>
+       &rarrlp; Difficulty (1-10): 7.5 <br>
+       &rarrlp; Days: 42 days<br>
+       &rarrlp; Total Ascent: 92,000'<br>
+       &rarrlp; High Point: 4,675'<br>
+      </p>
+      </section>
+      </div> 
+  </main>
+  <footer>
+    <aside>
+        3950 Valley Commons Drive <br> Bozeman, MT 59718<br>999.999.9999<br>  contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |<a class= "resource" href="resource.html"> Resource | </a><span id="currentdate"> Current Date Placeholder</span></p>
+  </footer>
+    
+  <script src="js/button.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/wayfinding.js"></script>
+  <script src="js/currentdate.js"></script>   
+</body>
+</html>

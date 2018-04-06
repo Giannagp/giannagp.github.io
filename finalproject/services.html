@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Services | The Mountain Spoke</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="The Mountain Spoke is one of the best option for  you and your bicycle">
+  <!-- fonts -->    
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+  <header >
+    <a href="home.html">
+      <figure class= "logo">
+         <img src="images/logo-large.png" alt= "The Mountain Spoke Logo">
+      </figure>
+      <h1> The Mountain Spoke</h1>
+    </a>  
+  </header>
+    <picture id="largeimag">
+      <img src="images/bike-large.jpg" alt="bike" sizes ="100vw"
+           srcset= "images/bike-large.jpg 600w,
+                    images/bike-large.jpg 800w,
+                    images/bike-large.jpg 1000w">
+      </picture>
+  <nav class= "navbar">
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+      <ul id="mainmenu" class="navigation">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="adventure-tour.html">Adventure Tour</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="shop.html">Shop</a></li>
+    	<li><a href="services.html">Services</a></li>
+    	<li><a href="contact.html" >Contact</a></li>
+      </ul>
+  </nav>
+  <main>   
+    <section class="page-title">
+     <h1>OUR SERVICES </h1>
+    </section>
+      <div class="contentBoxes">
+                    <!-- BOX 1 -->
+                    <div class="box1">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Shifting</td>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Adjust Derailleur (front or rear) </td>
+                                    <td id="one"></td>
+                                </tr>
+                                <tr>
+                                    <td>Replace Cable and/or Housinge </td>
+                                    <td id="two"></td>
+                                </tr>
+                            </tbody>
+
+                        </table><br>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Brakes</td>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Adjust Rim Brake</td>
+                                    <td id="three"></td>
+                                </tr>
+                                <tr>
+                                    <td>Adjust Disc Brake</td>
+                                    <td id="four"></td>
+                                </tr>
+                                
+                            </tbody>
+
+                        </table><br>
+                    </div>
+                    <!-- BOX 2 -->
+                    <div class="box3">
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Miscellaneous</td>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Wrap Road Bar Tape</td>
+                                    <td id="five"></td>
+                                </tr>
+                                <tr>
+                                    <td>Assemble Boxed Bike </td>
+                                    <td id="six"></td>
+                                </tr>
+                                <tr>
+                                    <td>Remove/ Clean/ Reinstall Chain </td>
+                                    <td id="seven"></td>
+                                </tr>
+                                <tr>
+                                    <td>Shop Rate </td>
+                                    <td id="eight"></td>
+                                </tr>
+                            </tbody>
+
+                        </table><br>
+                        </div>
+                        <div class="box4">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td colspan="2" class="title">Wheels</td>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Install Tube and/or Tire </td>
+                                    <td id="nine"></td>
+                                </tr>
+                                <tr>
+                                    <td>Install Tubeless Tire</td>
+                                    <td id="ten"></td>
+                                </tr>
+                                <tr>
+                                    <td>Adjust Front Hub  </td>
+                                    <td id="eleven"></td>
+                                </tr>
+                                <tr>
+                                    <td>Adjust Rear Hub</td>
+                                    <td id="twelve"></td>
+                                </tr>
+                                <tr>
+                                    <td>Overhaul Front Hub </td>
+                                    <td id="thirteen"></td>
+                                </tr>
+                                <tr>
+                                    <td>Overhaul Rear Hub  </td>
+                                    <td id="fourteen"></td>
+                                </tr>
+                                <tr>
+                                    <td>True Wheel and/or Replace Broken Spokes</td>
+                                    <td id="fifteen"></td>
+                                </tr>
+                            </tbody>
+
+                        </table><br>
+
+                    </div>
+      </div>
+  </main>
+  <footer>
+    <aside>
+        3950 Valley Commons Drive <br> Bozeman, MT 59718<br>999.999.9999<br>  contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |<a class= "resource" href="resource.html"> Resource | </a><span id="currentdate"> Current Date Placeholder</span></p>
+  </footer>
+  
+  <script src="js/prices.js"></script>
+  <script src="js/button.js"></script>
+  <script src="js/hamburger.js"></script>
+  <script src="js/wayfinding.js"></script>
+  <script src="js/currentdate.js"></script>   
+</body>
+</html>
