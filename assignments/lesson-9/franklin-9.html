@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City | Current Weather | The Weather Map</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="Weather forecast for the Frankling, Greenville and Springfield cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Acme"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+
+  <header >
+      <figure class= "logo">
+         <img src="images/logo2.png" alt= "The weather Mapa Logo" >
+      </figure>
+    
+    <h1>The Weather Map </h1>
+      <div class="subheading">Updating The Weather For You</div>
+   
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="navigation">
+    	<li><a href="index.html" >Home</a></li>
+    	<li class="active"><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#" >Greenville</a></li>
+    	<li><a href="#" >Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-9.html" >Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main> 
+      
+    <h2>Franklin City</h2>
+      
+    <picture class= cloudy>
+        <source media="(min-width: 64em)"
+               srcset="images/image-l.jpg">
+        <source media="(min-width: 37.5em)"
+                srcset="images/image-m.jpg">
+        <source media="(max-width: 37.5em)"
+               srcset="images/image-s.jpg">
+        <img src="images/image.jpg" alt="Weather Image">
+    </picture>
+      
+    <section>
+        
+      <h3>Weather Summary</h3>  
+        
+      <div class="currenttemp">
+          
+        <figure class = "curtemp">
+           <img src="images/currenttemp.jpg" alt="current temperature">
+        </figure>
+        
+        <p>Current Temp.: <span id="c_temp"></span></p>
+          
+        
+      </div>
+        
+      <div class="highlow">
+          
+        <figure class = "summaryhl">
+           <img src="images/hightemp.jpg" alt="High Temperature">
+        </figure>
+        <p>High: <span id="high"></span>&deg;F</p>
+          
+        <figure class = "summaryhl">
+            <img src="images/lowtemp.jpg" alt="Low Temperature">
+         </figure>
+         <p>Low: <span id="low"></span> &deg;F</p>
+
+      </div>  
+        
+        <div class="condition">
+            
+        <figure class = "conditionimag">
+           <img id="w_icon" src="#" alt="current weather">
+        </figure>
+        
+        <p>Current Weather: <span id="condition"></span></p>
+          
+        
+      </div>  
+        
+      <div class="conditions">
+          
+        <figure class = "summaryp">
+           <img src="images/rain.jpg" alt="Precipitation">
+        </figure>
+        <p>Precipitation: <span id="precip"></span> in </p> 
+          
+        <figure class = "summaryw">
+           <img src="images/windsp.jpg" alt="Wind Speed">
+        </figure>
+        <p>Wind Speed: <span id="speed"></span> mph</p>  
+        
+        <figure class = "summarywc">
+           <img src="images/windchill.jpg" alt="WindChill">
+        </figure>
+        <p>Windchill: <span id="wind"></span> &deg;F</p> 
+          
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src="images/sunny.jpg" alt="sunny/cloudy"> </td>
+            <td><img src="images/rain.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src= "images/snow.jpg" alt="sunny/cloudy"> </td>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src="images/sunny.jpg" alt="sunny/cloudy"> </td>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+            <td><img src="images/sunc.jpg"  alt="sunny/cloudy"> </td>
+          </tr>
+		</tbody>
+        <tbody>  
+          <tr>
+            <td>50&deg;F</td>
+            <td>54&deg;F</td>
+            <td>57&deg;F</td>
+            <td>40&deg;F</td>
+            <td>43&deg;F</td>
+            <td>47&deg;F</td>
+            <td>46&deg;F</td>
+            <td>51&deg;F</td>
+            <td>53&deg;F</td>
+            <td>50&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Weekly Climate Summary </h3>	
+        
+          <figure class = "myphoto"> 
+            <img src="images/franklin-original-crop.jpg" alt="Franklin Image" sizes="50vw" 
+                 srcset="images/franklin-s.jpg 400w,
+                         images/franklin-m.jpg 600w,
+                         images/franklin-l.jpg 900w">
+                 
+                        
+          </figure>
+        
+        <p>Forecast: <span id="f_summary"></span>
+        </p>
+        <p>Proin vitae nisi mollis, sollicitudin ante nec, porttitor nunc. Etiam malesuada erat lorem, ut vehicula metus dapibus et. Integer risus ligula, tempus a pharetra eget, laoreet et turpis. Nulla in mi quis dui scelerisque euismod quis eget magna. In a tempus turpis, ut pellentesque leo. Mauris pharetra est suscipit, aliquam nunc eget, laoreet mi. Aliquam iaculis ipsum ac leo feugiat suscipit. Duis tempus augue a lacus aliquet, eget sodales justo efficitur. Nunc cursus interdum ante. Pellentesque et viverra diam, eu blandit turpis. Sed elementum orci accumsan diam cursus, vel convallis massa venenatis. Integer consectetur felis mollis nulla pellentesque, rutrum venenatis ipsum tristique. Sed porttitor nulla eu eleifend porta. In quis consequat elit. Donec rutrum vulputate nisi quis feugiat.
+        </p>
+		</article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      The Weather Map 123 Main St. Franklin, MU 83454   999.999.9999   contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Map | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+    
+  <script src="js/wu-weather.js"></script>
+  <!--<script src="js/windchill.js"></script>-->
+  <script src='js/hamburger.js'></script>
+  <script src='js/currentdate.js'></script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Information | The Weather Map</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="Weather forecast for the Frankling, Greenville and Springfield cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Acme"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+  <header >
+      <figure class= "logo">
+         <img src="images/logo2.png" alt= "The weather Mapa Logo" >
+      </figure>
+    
+    <h1>The Weather Map </h1>
+      <div class="subheading">Updating The Weather For You</div>
+      
+  </header>
+    
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="navigation">
+    	<li class="active"><a href="index.html" >Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#" >Greenville</a></li>
+    	<li><a href="#" >Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery-9.html" >Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+    <h2>Welcome</h2>
+      <div class="homepage">
+        
+      <picture class= "myhomepic">
+          <source media="(max-width: 37.5em)"
+                  srcset="images/homepic-s.jpg">
+        <img src="images/homepic-m.jpg" alt="Weather Image">
+      </picture>        
+          
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere urna quis orci viverra, eu semper nisi interdum. Mauris ultrices lectus quis quam tristique, in fermentum eros imperdiet. Aliquam nisl leo, blandit vel aliquet ac, lobortis sed tortor. Nulla facilisi. Mauris dictum eros at elit malesuada, sit amet ullamcorper erat rutrum. Phasellus ultricies lorem vitae ante varius, a scelerisque arcu dictum. Sed viverra scelerisque libero, vehicula porttitor neque imperdiet in. Integer tortor urna, ultrices at dui at, varius sagittis leo. Nunc at risus laoreet purus malesuada eleifend. Aenean eget condimentum lorem. Mauris vel ex in ipsum laoreet ornare. Pellentesque facilisis enim velit, quis viverra ligula semper sit amet. Maecenas velit urna, malesuada quis accumsan fringilla, iaculis a orci. Proin molestie dui neque, eu facilisis ipsum ultricies sit amet. Nulla ultrices pellentesque nisi, sit amet rhoncus neque ornare nec.
+        </p>
+
+        <section class="index"><!--for the town info-->
+    
+        <!--<h1 id="mottoweather"></h1>
+        <p id="paruno"></p> -->
+      <!--<figure class = "myfran"> 
+            <img src="images/fran-l.jpg" alt="Franklin Image" sizes="50vw" 
+                 srcset="images/fran-s.jpg 400w,
+                         images/fran-m.jpg 600w,
+                         images/fran-l.jpg 900w">        
+          </figure>
+          <h1></h1>
+          <figure class = "mygreen"> 
+            <img src="images/green-l.jpg" alt="Greenville Image" sizes="50vw" 
+                 srcset="images/green-s.jpg 400w,
+                         images/green-m.jpg 600w,
+                         images/fgreen-l.jpg 900w">         
+          </figure>
+        
+          <figure class = "myspring"> 
+            <img src="images/spring-l.jpg" alt="Greenville Image" sizes="50vw" 
+                 srcset="images/gspring-s.jpg 400w,
+                         images/spring-m.jpg 600w,
+                         images/spring-l.jpg 900w">         
+          </figure> -->
+         
+    
+    </section> <!--for the town info-->
+    </div>
+    </main>
+  <footer>
+    <aside>
+      The Weather Map 123 Main St. Franklin, MU 83454   999.999.9999   contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Map | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+    
+  <script src="js/town.js"></script>    
+  <script src='js/hamburger.js'></script>
+  <script src='js/currentdate.js'></script>
+ 
+
+</body>
+</html>
+
+
+
+

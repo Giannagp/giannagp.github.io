@@ -1,0 +1,430 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    padding-bottom: 1em;  
+}
+
+header h1 {
+    font-family: 'Acme', sans-serif;
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight:200;
+    margin: 0px 0px 5px 0px;
+    display: inline-flex;
+
+}
+
+header figure.logo {
+    float: left;
+    margin: 0;
+    padding: 0 ; 
+
+}
+
+header figure img {
+    width: 46%;
+    margin-left: 10%;
+}
+
+header .subheading {
+    color: #ffffff;
+    font-style: italic;
+    text-align: left;  
+    margin-left: 20%;    
+}
+
+.navigation { 
+    list-style: none; 
+    padding-left: 0; 
+
+}
+
+.navigation li { 
+    display: none; 
+}
+
+
+.navigation.responsive {
+    position: relative; 
+    margin-left: 12%;
+    background: #ffffff;
+ 
+}
+
+.navigation.responsive li {
+    background-color: #6dd0f7;
+    display: flex;
+    flex-grow: 3;
+    justify-content: center;
+    width: 80%; 	
+    border: 1px solid #cccccc;   
+}
+
+.navigation.responsive li a { 
+    justify-content: center;	 
+    text-decoration:none;
+    padding: 2%;
+    width: 100%;      
+}
+    
+.navigation.responsive li a:hover { 
+    background-color: #999999 ;
+    color: #ffffff ;
+}
+
+
+nav button {
+    position: absolute;
+    background-color: #6dd0f7;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;  /*remove list*/
+    margin: 0 1px;
+}
+
+
+nav ul li a {
+    text-decoration: none;  /*saca la liena de abajo*/
+    color: #000000; /* makes the words white*/
+}
+
+nav ul li.active a { /*afecta ambas pantallas*/
+    background-color: #ffffff; /*current page white*/
+    
+}
+    
+nav ul li a:hover {  /*afecta la pantalla media*/
+    background-color: #999999 ; /*cuando se apoya el mouse */
+    color: #ffffff ; /*color letra*/
+}
+
+main {
+    padding: 2rem .7rem;
+}
+
+main h2 {
+    font-family: 'Amaranth', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;  
+    margin: 0;
+}
+
+main picture { 
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+        
+ }
+
+main figure img { 
+    width: 80%; 
+}
+
+
+ div p {
+    font-size: 1rem;
+    font-family: 'Amaranth', sans-serif; 
+    padding: 1%;
+    width: 100%;
+}
+
+section figure.conditionimag{
+    width: 7%;
+    margin: .2rem .6rem .1rem 10%;
+    float: left;
+}
+
+section figure.curtemp{
+    width: 3%;
+    margin: .4rem 1.4rem 0 13%;
+    float: left;
+    
+}
+section figure.summaryhl{
+    width: 2%;
+    margin: .2rem 1.4rem 0 13%;
+    float: left;
+    
+}
+
+section figure.summaryp{
+    width: 7%;
+    margin: .2rem .4rem .1rem 11%;
+    float: left; 
+}
+
+section figure.summaryp{
+    width: 8%;
+    margin: .2rem .4rem .1rem 10%;
+    float: left;
+}
+
+section figure.summaryw{
+    width: 8%;
+    margin: .2rem .4rem .1rem 10%;
+    float: left; 
+}
+
+section figure.summarywc{
+    width: 8%;
+    margin: .2rem .4rem .1rem 10%;
+    float: left; 
+}
+
+
+ h3 {
+     text-align: center;
+     margin-top: 1%;
+     padding-top: 3%;
+     font-family: 'Amaranth', sans-serif;
+     font-size: 1.6rem;
+}
+
+section.forecast {
+    display: none;
+}
+
+
+article figure.myphoto {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+/* fill the page in the small/phone view */
+  margin: 1%  1%;
+  text-align: center;
+  float: right; 
+
+}
+
+article p {
+    font-family: 'Amaranth', sans-serif;
+    font-size: .9rem;
+    
+}
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    
+}
+
+footer aside {
+    color: #ffffff;
+    width: 100%;
+    font-size: 15px;
+    padding: 3% 0 3% 0 ;
+    text-align: center;
+}
+
+footer>p {
+    padding-bottom: 2%;
+    text-align: center;
+    clear: both;
+    color: #ffffff;
+    font-size: 15px;
+} 
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*------------- Photo Gallery ------------------- */
+
+
+
+.weather{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+}
+
+.foto{
+    width: 47vw;
+    margin: 5% auto 2px;
+}
+
+p.text {
+    font-family: serif; 
+    width: 100%;
+    margin: 0;
+    padding: .9rem;
+    text-align: center;  
+ 
+}
+
+
+
+/*------------- Storm Center ------------------- */
+
+form#report {
+    margin: 2em 5%;
+}
+
+fieldset {
+    border-radius: .8em;
+    margin: 2.5em 0;
+    border: #000000 1.5px solid; 
+}
+
+legend {
+    Color: #ffffff;
+    margin-left: 6%;
+    padding: .6em;
+    border: #000000 solid 2px;
+    background-color: #6dd0f7;
+    border-radius: .4em;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 19px;
+}
+
+
+label span{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 16px; 
+    padding-top: 1.5em;
+    padding-bottom: .4em;  
+}
+
+span.rating {
+    padding-left: 31%;
+    padding-top: 0; 
+}
+
+.stregion {
+    padding: .3rem;
+    max-width: 70%;
+}
+
+select{
+    font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+}
+
+input {
+    display: block;
+    padding: .3em;
+    margin: .3em;
+    font-family: 'Amaranth', sans-serif;
+    color:#4d4d4d;
+    width: 70%;
+}
+
+.radio {
+    display: inline-block;
+    font-family: 'Amaranth', sans-serif;
+    margin-left: 1%;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+textarea {
+    padding-top: .4em;
+    border-radius: .4em;
+    font-family: 'Amaranth', sans-serif;
+    color: #4d4d4d;
+    width: 90%;
+}
+
+input.submitbtn{
+    color: #ffffff;
+    max-width: 85%;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.75rem;
+    padding: .5rem;
+    margin: 1.5rem 0rem;
+    background: #6dd0f7;
+    box-shadow: 6px 6px 10px #666666;
+    border: #000000 1.5px solid; 
+    border-radius: .4em;
+}
+
+
+
+/*-----------Index- Home PAge ---------------------- */
+
+.homepage p {
+    margin: 3%
+}
+        
+.myhomepic {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin: 1%;
+    float: right;
+}
+        
+section.index {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 1%;
+    padding-top: 3%;
+    margin-left: 3%;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.2rem;
+        
+}
+  
+.index h1 {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.index p {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Amaranth', sans-serif; 
+    margin: .5rem 7% 1% 15%
+
+}
+.index li {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Amaranth', sans-serif; 
+    margin-top: .5rem;
+    margin-right: 8%;
+}
+
+.index article {
+    border: 2px solid #6dd0f7;
+    border-radius: .4em;
+    margin: 1%;
+    margin-bottom: 4%;
+    box-shadow: 5px 5px 3px 3px #999999;
+    background-color: #eaeefa;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

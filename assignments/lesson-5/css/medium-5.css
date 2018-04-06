@@ -1,0 +1,61 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+header img {
+    float: left;
+    height: 76px;
+    width: 15%;  
+}
+    
+nav button { 
+    display:none; 
+    }  /* hamburger button does not need to be shown */
+     
+nav, nav ul{
+    background-color: #6dd0f7;
+    width: 100%;
+    display: block;
+    position: static;
+}
+    
+nav ul li, nav ul li {
+    display: inline-block;
+    width: 15%;
+    padding: .4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+    
+main figure {
+    display: inline-block;
+    float:left;
+    margin-left: 8%;
+    margin-bottom: 30px;
+    width: 40%;    
+}  
+
+div p {
+    display: flex;
+    text-align: center;
+}
+        
+section.forecast {
+    display: inline-grid;
+    width: 100%;
+    text-align: center;  
+} 
+
+th, td {    
+    width: 150px;
+    height: 50px;
+    margin: .1rem;
+    font-size: 1.2em;
+    text-align: center;
+} 
+  
+article p.town-article img {     
+   width: 62.666%; 
+   float:right; 
+    }  /* responsive images */
+
+}

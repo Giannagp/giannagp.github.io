@@ -1,0 +1,54 @@
+@media only screen and (min-width: 64em)  {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+    
+header, nav, main, footer{
+     max-width: 100%;
+}
+ /*--------Cities -------*/
+section figure.conditionimag{
+    width: 10%;
+    padding-top: 0;
+}
+
+section figure.summaryp{
+    width: 10%;
+    padding-top: 0;
+}
+
+section figure.summaryw{
+    width: 10%;
+    padding-top: 0;
+}
+
+section figure.summarywc{
+   width: 10%;
+   padding-top: 0;
+}
+
+article figure.myphoto  { 
+    margin: .1rem 3%;
+}
+    
+/*--------Gallery -------*/      
+.weather {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    
+    
+/*--------INDEX -------*/  
+
+.homepage p {
+    margin-top: 0;
+    padding-top: 0;
+}
+.myhomepic {
+  width: 20%;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+
+}
+    
+}

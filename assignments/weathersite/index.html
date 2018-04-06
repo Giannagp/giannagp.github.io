@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Weather Information | The Weather Map</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="Weather forecast for the Frankling, Greenville and Springfield cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Acme"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+    
+  <header >
+    <a href="index.html">
+      <figure class= "logo">
+         <img src="images/logo2.png" alt= "The Weather Mapa Logo">
+        
+      </figure>
+     <h1>The Weather Map </h1>
+      <div class="subheading">Updating The Weather For You</div>
+    </a>  
+  </header>
+    
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainmenu" class="navigation">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html" >Springfield</a></li>
+    	<li><a href="stormcenter.html" >Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+      </ul>	
+  </nav>
+    
+  <main>
+    <h2>Welcome</h2>
+      <div class="homepage">
+      <picture class= "myhomepic">
+        <source media="(max-width: 37.5em)"
+                  srcset="images/homepic-s.jpg">
+      <img src="images/homepic-m.jpg" alt="City Sky">
+      </picture>        
+          
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere urna quis orci viverra, eu semper nisi interdum. Mauris ultrices lectus quis quam tristique, in fermentum eros imperdiet. Aliquam nisl leo, blandit vel aliquet ac, lobortis sed tortor. Nulla facilisi. Mauris dictum eros at elit malesuada, sit amet ullamcorper erat rutrum. Phasellus ultricies lorem vitae ante varius, a scelerisque arcu dictum. Sed viverra scelerisque libero, vehicula porttitor neque imperdiet in. Integer tortor urna, ultrices at dui at, varius sagittis leo. Nunc at risus laoreet purus malesuada eleifend. Aenean eget condimentum lorem. Mauris vel ex in ipsum laoreet ornare. Pellentesque facilisis enim velit, quis viverra ligula semper sit amet. Maecenas velit urna, malesuada quis accumsan fringilla, iaculis a orci. Proin molestie dui neque, eu facilisis ipsum ultricies sit amet. Nulla ultrices pellentesque nisi, sit amet rhoncus neque ornare nec. Aenean eget condimentum lorem. Mauris vel ex in ipsum laoreet ornare. Pellentesque facilisis enim velit, quis viverra ligula semper sit amet. Maecenas velit urna, malesuada quis accumsan fringilla, iaculis a orci. Proin molestie dui neque, eu facilisis ipsum ultricies sit amet. Nulla ultrices pellentesque nisi, sit amet rhoncus neque ornare nec.
+      </p>
+    </div>
+    
+    <div class="t-index">
+    <section class="index">
+      <a href="franklin.html">
+        <h2 id="f_name">City, State</h2>
+        <p class="moto"><span class="moto" id="f_moto">Motto</span></p>
+        <div class="subindex"> 
+        <p class="info">- Founded In: <span id="f_yearFounded"></span></p>
+        <p class="info">- Population: <span id="f_population"></span></p>
+        <p class="info">- Annual Rainfal: <span id="f_annualRainfall"></span>"</p>
+        <p class="info">- Events:</p>
+          </div>    
+        <p class="event">* <span id="f_events_0"></span></p>
+        <p class="event">* <span id="f_events_1"></span></p> 
+        <p class="event">* <span id="f_events_2"></span></p>
+          
+      <figure class = "myfran"> 
+            <img src="images/franlarge-xs.jpg" alt="Franklin Image" >       
+          </figure>
+        </a>
+    </section> 
+      
+    <section class="index">
+        <a href="greenville.html">
+        <h2 id="g_name">City, State</h2>
+        <p class="moto"><span class="moto" id="g_moto">Motto</span></p>
+        <div class="subindex">    
+        <p>- Founded In: <span id="g_yearFounded"></span></p>
+        <p>- Population: <span id="g_population"></span></p>
+        <p>- Annual Rainfal: <span id="g_annualRainfall"></span>"</p>
+        <p>- Events:</p>
+        </div> 
+        <p class="event">* <span id="g_events_0"></span></p>
+        <p class="event">* <span id="g_events_1"></span></p> 
+        <p class="event">* <span id="g_events_2"></span></p>
+        <p class="event">* <span id="g_events_3"></span></p>
+        
+          <figure class = "mygreen">  
+            <img src="images/greenlarge-xs.jpg" alt="Greenville Image">         
+          </figure>
+        </a>
+        </section>
+      
+      <section class="index">
+        <a href="springfield.html">
+          <h2 id="s_name">City, State</h2>
+          <p class="moto"><span class="moto" id="s_moto">Motto</span></p>
+          <div class="subindex">     
+          <p>- Founded In: <span id="s_yearFounded"></span></p>
+          <p>- Population: <span id="s_population"></span></p>
+          <p>- Annual Rainfal: <span id="s_annualRainfall"></span>"</p>
+          <p>- Events:</p>
+        </div>
+          <p class="event">* <span id="s_events_0"></span></p>
+          <p class="event">* <span id="s_events_1"></span></p> 
+          <p class="event">* <span id="s_events_2"></span></p>
+          
+          <figure class = "myspring"> 
+            <img src="images/springlarge-xs.jpg" alt="Greenville Image">         
+          </figure>
+          </a>
+     </section>
+    </div>
+  </main>
+  <footer>
+    <aside>
+      The Weather Map 123 Main St. Franklin, MU 83454   999.999.9999   contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Map | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+    
+  <script src="js/town.js"></script>    
+  <script src='js/hamburger.js'></script>
+  <script src='js/currentdate.js'></script>
+  <script src="js/wayfinding.js"></script>
+ 
+
+</body>
+</html>
+
+
+
+

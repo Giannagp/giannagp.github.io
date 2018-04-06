@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Gallery | Photo | The Weather Map</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="Weather forecast for the Frankling, Greenville and Springfield cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Acme"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+
+  <header >
+      <figure class= "logo">
+         <img src="images/logo2.png" alt= "The weather Mapa Logo" >
+      </figure>
+    
+    <h1>The Weather Map </h1>
+      <div class="subheading">Updating The Weather For You</div>
+      
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="navigation">
+    	<li><a href="#" >Home</a></li>
+    	<li><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#" >Greenville</a></li>
+    	<li><a href="#" >Springfield</a></li>
+    	<li><a href="stormcenter.html" >Storm Center</a></li>
+    	<li class="active"><a href="gallery-8.html" >Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+    <h2>Photo Gallery </h2>
+      
+      <section class ="weather">
+          
+        <div class="photo">
+          <picture class="foto">
+            <img src="images/sky-s.jpg" alt= "Road"> 
+          </picture>
+          <p class= "text"> Lorem ipsum dolor sit amet. </p>          
+        </div>
+        
+        <div class ="photo">
+          <picture class="foto">
+            <img src= "images/rain-st-s.jpg" alt= "Sky">
+          </picture>
+          <p class= "text"> Lorem ipsum dolor sit amet. </p>
+         </div>
+          
+          <div class="photo" >
+            <picture  class="foto">
+              <img src ="images/mon-sun-s.jpg" alt= "Lightning">
+            </picture>
+            <p class= "text"> Lorem ipsum dolor sit amet. </p>
+          </div>
+          
+          <div class="photo">
+            <picture class= "foto">
+              <img src ="images/mon-nieve-s.jpg" alt= "Snow in the Mountains">
+            </picture>
+            <p class= "text"> Lorem ipsum dolor sit amet. </p>
+          </div>   
+          
+          <div class="photo">
+            <picture class= "foto">
+              <img src="images/mon-snow-s.jpg" alt= "After Snow Storm">
+            </picture>
+            <p class= "text"> Lorem ipsum dolor sit amet. </p>
+          </div>
+                 
+          <div class="photo">
+            <picture class= "foto">
+              <img src ="images/road-snow-s.jpg" alt= "Rain Storm">
+            </picture>
+            <p class= "text"> Lorem ipsum dolor sit amet. </p>
+          </div>
+          
+      </section>
+    </main> 
+
+      <footer>
+    <aside>
+      The Weather Map 123 Main St. Franklin, MU 83454   999.999.9999   contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Map | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src='js/hamburger.js'></script>
+  <script src='js/currentdate.js' > </script>
+
+
+</body>
+</html>

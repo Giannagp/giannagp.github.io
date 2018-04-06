@@ -1,0 +1,20 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article figure.myphoto  { 
+      margin: .1rem 3%;
+}
+   
+main picture { 
+    margin: 10% 3% 10% 3%;       
+ }
+    
+.weather{
+         grid-template-columns: 1fr 1fr 1fr;
+}
+    
+.photo img:hover {
+    box-shadow: 5px 10px 10px 5px #999999;
+}
+    
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Springfield City | Weather Information | The Weather Map</title>
+  <meta name="author" content="Gianna G. Echegaray">
+  <meta name="description" content="Weather forecast for the Frankling, Greenville and Springfield cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Acme"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+    <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+</head>
+<body>
+
+  <header >
+    <a href="index.html">
+      <figure class= "logo">
+         <img src="images/logo2.png" alt= "The Weather Mapa Logo">
+        
+      </figure>
+     <h1>The Weather Map </h1>
+      <div class="subheading">Updating The Weather For You</div>
+    </a>  
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainmenu" class="navigation">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html" >Springfield</a></li>
+    	<li><a href="stormcenter.html" >Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>	
+  </nav>
+    
+  <main> 
+      
+    <h2>Springfield City</h2>
+    <picture class="largeimag">
+      <img src="images/springlarge-l.jpg" alt="Springfield City image" sizes ="100vw"
+           srcset= "images/springlarge-s.jpg 600w,
+                    images/springlarge-m.jpg 800w,
+                    images/springlarge-l.jpg 1000w">
+    </picture>
+      
+    <h3>Weather Summary</h3> 
+    <section class="curhiglow">
+        
+      <div class="currenttemp">
+        <figure class = "curtemp">
+           <img src="images/currenttemp.jpg" alt="Green Thermometer for Current Temperature">
+        </figure>
+        <p>Current Temp.: <span id="c_temp"></span></p>
+        <figure class = "summaryhl">
+           <img src="images/hightemp.jpg" alt="Red Thermometer for High Temperature">
+        </figure>
+        <p>High: <span id="high"></span></p>
+        <figure class = "summaryhl">
+          <img src="images/lowtemp.jpg" alt="Blue Thermometer for Low Temperature">
+        </figure>
+        <p>Low: <span id="low"></span></p>
+      </div>  
+        
+        <div class="condition">
+          <figure class = "conditionimag">
+           <img id="w_icon" src="#" alt="Current Weather Image">
+          </figure>
+          <p>Current Weather: <span id="condition"></span></p>
+          <figure class = "summaryp">
+           <img src="images/rain.jpg" alt="Cloud with Rain">
+          </figure>
+          <p>Precipitation: <span id="precip"></span></p> 
+          <figure class = "summaryw">
+           <img src="images/windsp.jpg" alt="Wind Speed">
+          </figure>
+          <p>Wind Speed: <span id="speed"></span></p>  
+          <figure class = "summarywc">
+           <img src="images/windchill.jpg" alt="WindChill">
+          </figure>
+        <p>Windchill: <span id="wind"></span></p> 
+        </div>  
+          
+      <div class="forecastcond">
+        <figure class = "calendar">
+           <img src="images/calendar.jpg" alt="Calendar">
+        </figure> 
+        <p>Forecast: <span id="f_summary"></span></p>   
+      </div>
+          
+    </section>
+      
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day</th>
+            <th><span id="done"></span></th>
+            <th><span id="dtwo"></span></th>
+            <th><span id="dthree"></span></th>
+            <th><span id="dfour"></span></th>
+            <th><span id="dfive"></span></th>
+            <th><span id="dsix"></span></th>
+            <th><span id="dseven"></span></th>
+            <th><span id="deight"></span></th>
+            <th><span id="dnine"></span></th>
+            <th><span id="dten"></span></th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td id="vacio"></td>
+            <td><figure class="foreimag"><img id="one_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="two_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="three_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="four_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="five_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="six_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="seven_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="eight_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="nine_icon" src="#" alt="weather"></figure></td>
+            <td><figure class="foreimag"><img id="ten_icon" src="#" alt="weather"></figure></td>
+          </tr>
+		</tbody>
+        <tbody>  
+          <tr>
+            <td>High</td>  
+            <td><span id="hone"></span>&deg;F</td>
+            <td><span id="htwo"></span>&deg;F</td>
+            <td><span id="hthree"></span>&deg;F</td>
+            <td><span id="hfour"></span>&deg;F</td>
+            <td><span id="hfive"></span>&deg;F</td>
+            <td><span id="hsix"></span>&deg;F</td>
+            <td><span id="hseven"></span>&deg;F</td>
+            <td><span id="height"></span>&deg;F</td>
+            <td><span id="hnine"></span>&deg;F</td>
+            <td><span id="hten"></span>&deg;F</td>
+          </tr>
+		</tbody>
+          <tbody>  
+          <tr>
+            <td>Low</td>  
+            <td><span id="lone"></span>&deg;F</td>
+            <td><span id="ltwo"></span>&deg;F</td>
+            <td><span id="lthree"></span>&deg;F</td>
+            <td><span id="lfour"></span>&deg;F</td>
+            <td><span id="lfive"></span>&deg;F</td>
+            <td><span id="lsix"></span>&deg;F</td>
+            <td><span id="lseven"></span>&deg;F</td>
+            <td><span id="leight"></span>&deg;F</td>
+            <td><span id="lnine"></span>&deg;F</td>
+            <td><span id="lten"></span>&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Weekly Climate Summary </h3>	
+        
+          <figure class = "myphoto"> 
+            <img src="images/spring-l.jpg" alt="Main bridge of the city of Springfield" sizes="50vw" 
+                 srcset="images/spring-s.jpg 400w,
+                         images/spring-m.jpg 600w,
+                         images/spring-l.jpg 900w">            
+          </figure>
+        
+        <p>Proin vitae nisi mollis, sollicitudin ante nec, porttitor nunc. Etiam malesuada erat lorem, ut vehicula metus dapibus et. Integer risus ligula, tempus a pharetra eget, laoreet et turpis. Nulla in mi quis dui scelerisque euismod quis eget magna. In a tempus turpis, ut pellentesque leo. Mauris pharetra est suscipit, aliquam nunc eget, laoreet mi. Aliquam iaculis ipsum ac leo feugiat suscipit. Duis tempus augue a lacus aliquet, eget sodales justo efficitur. Nunc cursus interdum ante. Pellentesque et viverra diam, eu blandit turpis. Sed elementum orci accumsan diam cursus, vel convallis massa venenatis. Integer consectetur felis mollis nulla pellentesque, rutrum venenatis ipsum tristique. Sed porttitor nulla eu eleifend porta. In quis consequat elit. Donec rutrum vulputate nisi quis feugiat.
+        </p>
+        <p>Proin vitae nisi mollis, sollicitudin ante nec, porttitor nunc. Etiam malesuada erat lorem, ut vehicula metus dapibus et. Integer risus ligula, tempus a pharetra eget, laoreet et turpis. Nulla in mi quis dui scelerisque euismod quis eget magna. In a tempus turpis, ut pellentesque leo. Mauris pharetra est suscipit, aliquam nunc eget, laoreet mi. Aliquam iaculis ipsum ac leo feugiat suscipit. Duis tempus augue a lacus aliquet, eget sodales justo efficitur. Nunc cursus interdum ante. Pellentesque et viverra diam, eu blandit turpis. Sed elementum orci accumsan diam cursus, vel convallis massa venenatis. Integer consectetur felis mollis nulla pellentesque, rutrum venenatis ipsum tristique. Sed porttitor nulla eu eleifend porta. In quis consequat elit. Donec rutrum vulputate nisi quis feugiat.
+        </p>
+		</article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      The Weather Map 123 Main St. Franklin, MU 83454   999.999.9999   contact@theurf.com 
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Weather Map | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+    
+  <!--<script src="js/windchill.js"></script>-->
+  <script src='js/hamburger.js'></script>
+  <script src='js/currentdate.js'></script>
+  <script src="js/wayfinding.js"></script>
+  <script src="js/wu-weather-springfield.js"></script>
+ 
+
+</body>
+</html>
