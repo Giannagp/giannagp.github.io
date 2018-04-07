@@ -26,7 +26,9 @@ section.shop-services {
     position: relative;
 }
 
-    
+section.shop-services img{
+        width: 71.4%;
+    }   
 button.btn-one{
     display: inline-block;
     position: absolute;
@@ -63,7 +65,9 @@ section.adventure {
     position: relative;
 }
 
- 
+section.adventure img{
+     width: 71.4%;   
+    }
 
 button.btn-three{
     display: inline-block;

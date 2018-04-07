@@ -21,7 +21,7 @@ picture img {
     position: relative;
 }
 header {
-    background-color: #4d0017;
+    background-color: #33000f;
     width: 100%; 
     border-top: solid 3px #000;
     border-bottom: solid 3px #000;
@@ -63,7 +63,7 @@ header figure img {
     background: #ffffff;
 }
 .navigation.responsive li {
-    background-color: #062f4f;
+    background-color: #000d33;
     display: flex;
     flex-grow: 3;
     justify-content: center;
@@ -84,7 +84,7 @@ header figure img {
     color: #ffffff ;
 }
 nav button {
-    background-color: #062f4f;
+    background-color: #052b47;
     border: none; 
 }
 .hamburger{
@@ -132,7 +132,7 @@ section.shop-services img {
     padding: 3%;
 }
 div.shop {    
-    background-color: #062f4f;
+    background-color: #052b47;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -160,7 +160,7 @@ section.services img {
     padding: 3%;
 }
 div.services {    
-    background-color: #062f4f;
+    background-color: #052b47;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -183,7 +183,7 @@ section.adventure img {
     padding: 3%;
 }
 div.adventure{
-    background-color: #062f4f;
+    background-color: #052b47;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -207,7 +207,7 @@ section.events img {
     padding: 3%;
 }
 div.events{
-    background-color: #062f4f;
+    background-color: #052b47;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -232,7 +232,7 @@ section.contact img {
     padding: 3%;
 }
 div.contact{
-    background-color: #062f4f;
+    background-color: #000d33;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -244,7 +244,7 @@ button.btn-five{
 }
 
 footer {
-    background-color: #4d0017;
+    background-color: #33000f;
     width: 100%;    
     width: 100%;    
 }
@@ -255,7 +255,7 @@ footer aside {
     font-size: 16px;
     padding: 3% 0 2% 0 ;
     text-align: center;
-    background-color: #4d0017;
+    background-color: #33000f;
     border-top: solid 3px #000;
     
 }
@@ -266,7 +266,7 @@ footer>p {
     clear: both;
     color: #999999;
     font-size: 15px;
-    background-color: #33000f;
+    background-color: #1a0008;
     border-top: solid 1px #000;
 } 
 
@@ -345,7 +345,7 @@ iframe{
 
 section.form-info{
     text-align: center;
-    border: solid 1.5px #4d0017;
+    border: solid 1.5px #33000f;
     border-radius: .8em;
     margin: 5% 5% 5% 5%;
     background-color: #f2f2f2;
@@ -368,7 +368,7 @@ form#contact {
 fieldset {
     border-radius: .8em;
     margin: 2.5em 0;
-    border: #4d0017 1.5px solid; 
+    border: #33000f 1.5px solid; 
     background-color: #f2f2f2;
     
 }
@@ -378,7 +378,7 @@ legend {
     margin-left: 6%;
     padding: .6em;
     border: #000000 solid 2px;
-    background-color: #062f4f;
+    background-color: #000d33;
     border-radius: .4em;
     font-family: 'Noto Sans', sans-serif;
     font-size: 19px;
@@ -454,7 +454,7 @@ form#registration {
     text-align: center;
     line-height: 25px;
     border: solid #000 1.5px;
-    background-color: #062f4f;
+    background-color: #000d33;
     color: #d9d9d9;
     margin: 2%;
     border-radius: .4em;
@@ -467,7 +467,7 @@ p.adventure-info {
     padding: 4%;
 }
 p.adventure-cont{
-    border: #4d0017 1px solid; 
+    border: #33000f 1px solid; 
     border-radius: .4em;
     background: #471f3f;
     margin: 2% 10%; 
@@ -494,7 +494,7 @@ a.submitbtn{
 
 .intro{
     font-style: italic;
-    border-bottom: #4d0017 1.5px solid;
+    border-bottom: #33000f 1.5px solid;
     margin: 4%;
 }
 
@@ -503,15 +503,15 @@ p.title {
 }
 
 .info-cycle{
-    border-bottom: #4d0017 1.5px solid;
-    border-top: #4d0017 1.5px solid;
+    border-bottom: #33000f 1.5px solid;
+    border-top: #33000f 1.5px solid;
     padding: 3%
 
 }
 .registration {
-  border: #4d0017 1px solid; 
+  border: #33000f 1px solid; 
   border-radius: .4em;
-  background-color: #062f4f;
+  background-color: #000d33;
   color: #d9d9d9;
   margin: 2% 10%; 
   padding: 4%;  
@@ -520,9 +520,9 @@ p.title {
 
 .map-event{
   display: none;
-  border: #4d0017 1px solid; 
+  border: #33000f 1px solid; 
   border-radius: .4em;
-  background-color: #062f4f; 
+  background-color: #000d33; 
   color: #d9d9d9;
   margin: 2% 10%; 
   padding: 4%;  
@@ -537,7 +537,7 @@ p.title {
 /*----------- Service ---------------------- */
 table {
  width: 50%;
- border:#4d0017 1.5px solid; 
+ border:#33000f 1.5px solid; 
  border-collapse: collapse;
  margin-left: 15%;
  font-family: 'Amaranth', sans-serif;
@@ -545,7 +545,7 @@ table {
  
 }
 td.title {
-    background-color: #062f4f;
+    background-color: #000d33;
     color: #d9d9d9;
     text-align: center;
 }
