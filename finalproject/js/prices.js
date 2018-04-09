@@ -4,10 +4,9 @@ priceObject.open("GET","https://github.com/giannagp/term-project/blob/master/dat
 
 priceObject.send();
 
-
 priceObject.onload= function() {
     
     var priceInfo= JSON.parse(priceObject.responseText);
     console.log(priceInfo);
     
-    document.getElementById("one").innerHTML= priceInfo. ;
+    document.getElementById("one").innerHTML= priceInfo.ourservices["0"].adjustDerailleur;
