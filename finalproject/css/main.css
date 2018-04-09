@@ -555,8 +555,9 @@ td.title {
     text-align: center;
 }
 
-tr {
+td {
     border: #000 2px solid; 
+    text-align: left;
 }
 
 tr:nth-child(even){
