@@ -10,7 +10,7 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    max-width: 1000%;
+    max-width: 100%;
     margin: 0;
     background-color: white;
 }
@@ -84,7 +84,7 @@ header figure img {
     color: #ffffff ;
 }
 nav button {
-    background-color: #052b47;
+    background-color: #000d33;
     border: none; 
 }
 .hamburger{
@@ -132,7 +132,7 @@ section.shop-services img {
     padding: 3%;
 }
 div.shop {    
-    background-color: #052b47;
+    background-color: #000d33;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -160,7 +160,7 @@ section.services img {
     padding: 3%;
 }
 div.services {    
-    background-color: #052b47;
+    background-color: #000d33;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -183,7 +183,7 @@ section.adventure img {
     padding: 3%;
 }
 div.adventure{
-    background-color: #052b47;
+    background-color: #000d33;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -207,7 +207,7 @@ section.events img {
     padding: 3%;
 }
 div.events{
-    background-color: #052b47;
+    background-color: #000d33;
     color: #d9d9d9;
     border: none;
     padding: 1% 3%;
@@ -242,6 +242,11 @@ div.contact{
 button.btn-five{
     display: none;
 }
+
+div.home-text-cont{
+    display: none;
+}
+
 
 footer {
     background-color: #33000f;
