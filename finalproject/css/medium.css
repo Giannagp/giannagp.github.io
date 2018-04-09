@@ -104,8 +104,10 @@ section.contact img {
     padding: 0;
 }
 
- 
-    
+/*--------------- Shop  ---------------- */  
+.shop-bike img{
+    width: 70%;
+}
 /*--------------- Contact ---------------- */ 
     
 iframe{

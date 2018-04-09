@@ -13,7 +13,6 @@
   <link href="css/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   <header >
@@ -43,10 +42,10 @@
   </nav>
   <main> 
       <section class="page-title"><h1>SHOP BICYCLES</h1></section>
-    <div class="container">
-    <div id="slider">
-      <ul class="slides">
-        <li class="shop-bike">
+    <div id="container">
+      <div id="accordion">
+          <h3 id="roadBike">Road Bikes &nbsp; &nbsp; &or;</h3>
+        <div class="shop-bike">
           <img src="images/road-bike-one.jpg" alt="bike model"><br>
           <p class="shop-bike-title">PROPEL ADVANCED SL 0 DISC</p>
            <p class="text"> $11,530 <br>
@@ -55,10 +54,7 @@
             &zigrarr; Giant SLR 0 Aero Composite WheelSystem with Giant Gavia Race 0  tubeless tires <br>
             &zigrarr; Shimano Dura-Ace Di2 11-speed electronic componentry<br>
             &zigrarr; Shimano Dura-Ace hydraulic disc brakes</p>
-        </li> 
-   
-        <li class= "shop-bike">
-          <img src="images/road-bike-two.jpg" alt="bike model">
+            <img src="images/road-bike-two.jpg" alt="bike model">
           <p class="shop-bike-title">AVOW ADVANCED PRO 0</p>
           <p class="text"> $8,160 <br>
           &zigrarr; High-performance Advanced-grade composite frame <br>
@@ -66,9 +62,10 @@
           &zigrarr; Giant SLR 1 Composite WheelSystem with Giant Gavia Race 1 tubeless tires<br>
           &zigrarr; SRAM RED eTap 11-speed electronic drivetrain<br>
           &zigrarr; Giant SpeedControl SL brakes</p>
-        </li>
+        </div> 
    
-        <li class= "shop-bike">
+          <h3 id="mountainBikes">Mountain Bikes &nbsp;&nbsp; &or;</h3>
+        <div class= "shop-bike">
           <img src="images/mountain-bike-one.jpg" alt="bike model">
           <p class="shop-bike-title">ANTHEM ADVANCED 0</p>
           <p class="text"> $8,160 <br>
@@ -77,9 +74,6 @@
           &zigrarr; RockShox Super Deluxe RCT trunnion mount rear shock<br>
           &zigrarr; Giant TRX 0 Composite WheelSystem with Maxxis Forekaster tubeless tires<br>
           &zigrarr; SRAM X01 Eagle 1x12-speed drivetrain and SRAM Guide RSC hydraulic disc brakes<br></p>
-        </li>
-   
-        <li class= "shop-bike">    
           <img src="images/mountain-bike-two.jpg" alt="bike model">
           <p class="shop-bike-title">PIQUE ADVANCED 1</p>
           <p class="text"> $5,100 <br>
@@ -89,11 +83,11 @@
           &zigrarr; SRAM GX Eagle, 1x12 speed drivetrain<br>
           &zigrarr; SRAM Guide RS hydraulic disc brakes<br>
           &zigrarr; Giant TRX 1 27.5 Composite WheelSystem</p>
+        </div>
+   
 
-        </li>
-
-        
-        <li class= "shop-bike">    
+        <h3 id="crossBikes">Cross and Gravel Bikes &nbsp;&nbsp; &or;</h3>
+        <div class= "shop-bike">    
           <img src="images/cross-bike-one.jpg" alt="bike model">
           <p class="shop-bike-title">TXC ADVANCED PRO 2</p>
           <p class="text"> $2,700 <br>
@@ -102,9 +96,6 @@
           &zigrarr; Giant PX-2 Disc wheelset with Schwalbe X-One Evolution tubeless tires<br>
           &zigrarr; SRAM Rival 1 1x11 speed drivetrain<br>
           &zigrarr; SRAM Rival 1 hydraulic disc brakes </p>
-        </li >
-
-        <li  class= "shop-bike">
           <img src="images/cross-bike-two.jpg" alt="bike model">
           <p class="shop-bike-title">BRAVA SLR0</p>
           <p class="text"> $1,840 <br>
@@ -113,21 +104,11 @@
           &zigrarr; Giant PX-2 Disc wheelset with Schwalbe Super Swan tires<br>
           &zigrarr; SRAM Apex 1 11-speed componentry<br>
           &zigrarr; SRAM Apex 1 HRD hydraulic disc brakes </p>
-        </li> 
-        <li class="shop-bike">
-          <img src="images/road-bike-two.jpg" alt="bike model">
-          <p class="shop-bike-title">AVOW ADVANCED PRO 0</p>
-          <p class="text"> $8,160 <br>
-          &zigrarr; High-performance Advanced-grade composite frame <br>
-          &zigrarr; AeroDrive Tri Advanced-grade composite fork with hybrid alloy/composite steerer<br>
-          &zigrarr; Giant SLR 1 Composite WheelSystem with Giant Gavia Race 1 tubeless tires<br>
-          &zigrarr; SRAM RED eTap 11-speed electronic drivetrain<br>
-          &zigrarr; Giant SpeedControl SL brakes</p>
-        </li> 
-      </ul>
+        </div >
+ 
+      </div>
      </div>
-    </div>
-    
+
   </main>
   <footer>
     <aside>
@@ -136,45 +117,22 @@
     <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |<a class= "resource" href="resource.html"> Resource | </a><span id="currentdate"> Current Date Placeholder</span></p>
   </footer>
 
+
     
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  
+  <script src="js/currentdate.js"></script>   
   <script>
-   $(function() {
-        
-        var width = 820;
-        var animationSpeed= 1000;
-        var pause = 3000;
-        var currentSlide = 1;
-        
-        var $slider = $('#slider');
-        var $slideContainer = $slider.find('.slides');
-        var $slides = $slideContainer.find('.shop-bike');
-        
-        var interval;
-        
-        function startSlider(){
-        interval= setInterval(function() {
-         $slideContainer.animate({'margin-left': '-='+width}, animationSpeed,  function(){ currentSlide++;
-            if(currentSlide === $slides.length){
-             currentSlide =1;
-             $slideContainer.css('margin-left', 0);
-            }                      
-          });
-        }, pause);
-        }
-        
-        function stopSlider() {
-            clearInterval(interval);
-        }
-        
-     $slider.on('mouseenter', stopSlider).on ('mouseleave', startSlider);
-        startSlider();
+        $( function() {
+            $( "#accordion" ).accordion({
+                collapsible: true
+            });   
+            
+            });
     
-});
+
     
     </script>   
-
-  <script src="js/currentdate.js"></script>   
-
 
 </body>
 </html>
