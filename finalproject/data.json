@@ -2,14 +2,14 @@
 "ourservices" : [
  {
     "name": "Shifting",
-    "adjustDerailleur": "$45",
+    "adjustDerailleur": "$45.00",
     "replaceCable": "$69.99"
   },
 
 {
     "name": "Breaks",
-    "adjustRim": "$12",
-    "adjustDisc": "$8"
+    "adjustRim": "$12.00",
+    "adjustDisc": "$8.00"
   },
 
   {

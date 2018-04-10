@@ -32,7 +32,7 @@ section.shop-services img{
     width: 80%;
     margin-top: 3%
 }   
-button.btn-one{
+div.btn-one{
     display: inline-block;
     position: absolute;
     padding: 1% 6%;
@@ -56,7 +56,7 @@ section.services img{
     width: 80%;
     margin-top: 3%   
 }
- button.btn-two{
+ div.btn-two{
     display: inline-block;
     position: absolute;
     padding: 1% 6%;
@@ -81,7 +81,7 @@ section.adventure img{
     margin-top: 3%   
 }
 
-button.btn-three{
+div.btn-three{
     display: inline-block;
     position: absolute;
     padding: 1% 3%;
@@ -108,7 +108,7 @@ section.events img {
     width: 80%;
     margin-top: 3%
 }
-button.btn-four{
+div.btn-four{
     display: inline-block;
     position: absolute;
     padding: 1% 5%;
@@ -135,7 +135,7 @@ section.contact img{
     margin-top: 3%
 }
     
-button.btn-five{
+div.btn-five{
     display: inline-block;
     position: absolute;
     padding: 1% 5%;
@@ -196,6 +196,10 @@ p.home-text-info-two{
     border-bottom: solid #d9d9d9 1.5px;
 }
 
+  /*--------shop -------*/   
+.shop-bike img {
+    width: 50%;
+}
 /*--------Adventure -------*/      
 .all-adventure{
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -215,9 +219,9 @@ p.home-text-info-two{
     
     
     
+    /*--------Service -------*/  
     
-    
-    
+
     
     
     

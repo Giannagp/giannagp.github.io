@@ -105,12 +105,17 @@ section.contact img {
 }
 
 /*--------------- Shop  ---------------- */  
-.shop-bike img{
+.shop-bike img {
     width: 70%;
 }
+
+h3{
+    padding: 2%;   
+    }
+    
 /*--------------- Contact ---------------- */ 
     
-iframe{
+iframe {
     height: 300px;
 }
 
@@ -139,7 +144,11 @@ p.adventure-info{
     
    /*------------------ Services ---------------------- */  
 
-    
+.contentBoxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    }
     
     
     

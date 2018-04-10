@@ -140,7 +140,7 @@ div.shop {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-button.btn-one {
+div.btn-one {
     display: none;
 }
 
@@ -168,7 +168,7 @@ div.services {
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-button.btn-two {
+div.btn-two {
     display: none;
 }
 section.adventure{
@@ -191,7 +191,7 @@ div.adventure{
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-button.btn-three{
+div.btn-three{
     display: none;
 }
 
@@ -215,7 +215,7 @@ div.events{
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-button.btn-four{
+div.btn-four{
     display: none;
 }
 
@@ -240,7 +240,7 @@ div.contact{
     font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
 }
-button.btn-five{
+div.btn-five{
     display: none;
 }
 
@@ -290,7 +290,6 @@ a.resource{
 h3 {
     font-family: 'Noto Sans', sans-serif;
     margin: 3%;
-    margin-left: 2%;
     font-size: 25px;
     color: #f2f2f2;
     background-color: #000d33;
