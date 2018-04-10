@@ -115,7 +115,7 @@ h3{
     
 /*--------------- Contact ---------------- */ 
     
-iframe {
+object {
     height: 300px;
 }
 
@@ -147,7 +147,7 @@ p.adventure-info{
 .contentBoxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    align-items:center;
     }
     
     
