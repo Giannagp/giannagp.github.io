@@ -455,7 +455,7 @@ form#registration {
 /*-----------Thank You ---------------------*/
 
 .thanks {
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     text-align: center;
     
@@ -463,7 +463,7 @@ form#registration {
 
 /*----------- Adventure ---------------------- */
 .adventure-one, .adventure-two, .adventure-three, .adventure-four {
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     text-align: center;
     line-height: 25px;
@@ -500,7 +500,7 @@ a.submitbtn{
 }
 
 .event-cycle{
-    font-family: 'Amaranth', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
     line-height: 25px;
     margin: 3%;
@@ -584,18 +584,28 @@ tr:nth-child(odd){
 
 
 /*----------- Resource // Video ---------------------- */
-.resource{
+section.resource {
     text-align: center;
     line-height: 30px;
-    font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#999999;
+    font-family: 'Noto Sans', sans-serif;
+
+    
+}
+.resource a {
+    text-decoration: none;
+    color:#000d33;
+    
+}
+
+a.resource {
     text-decoration: none;
     color:#999999;
 }
 
-
 .video {
-    text-align: center;
-    line-height: 30px;
     font-size: 15px;
     text-decoration: none;
     color:#999999;
