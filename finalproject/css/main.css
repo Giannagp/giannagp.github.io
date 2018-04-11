@@ -276,12 +276,6 @@ footer>p {
     border-top: solid 1px #000;
 } 
 
-a.resource{
-    text-decoration: none;
-    color:#999999;
-}
-
-
 
 
 
@@ -589,10 +583,20 @@ tr:nth-child(odd){
 }
 
 
-/*----------- Resource ---------------------- */
+/*----------- Resource // Video ---------------------- */
 .resource{
     text-align: center;
-    font-family: 'Fjalla One', sans-serif;
     line-height: 30px;
-    
+    font-size: 15px;
+    text-decoration: none;
+    color:#999999;
+}
+
+
+.video {
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    color:#999999;
 }
